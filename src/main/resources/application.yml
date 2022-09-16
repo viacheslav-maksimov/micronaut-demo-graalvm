@@ -1,0 +1,16 @@
+micronaut:
+  application:
+    name: micronautDemoGraalvm
+netty:
+  default:
+    allocator:
+      max-order: 3
+
+redisson:
+  single-server-config:
+    address: redis://redis-node:6379
+    connection-minimum-idle-size: 1
+    connection-pool-size: 2
+    connect-timeout: 1000
+  threads: 2
+  netty-threads: 2
